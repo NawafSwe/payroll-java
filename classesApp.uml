@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="171.0" y="825.0">com</node>
+    <node x="404.0" y="750.0">images</node>
+    <node x="0.0" y="750.0">netscape</node>
+    <node x="0.0" y="562.0">ManagerEmployee</node>
+    <node x="334.0" y="825.0">org</node>
+    <node x="0.0" y="303.0">SalaryEmployee</node>
+    <node x="656.0" y="0.0">toolbarButtonGraphics</node>
+    <node x="497.0" y="825.0">sun</node>
+    <node x="660.0" y="825.0">jdk</node>
+    <node x="202.0" y="750.0">META-INF</node>
+    <node x="591.0" y="750.0">apple</node>
+    <node x="0.0" y="825.0">java</node>
+    <node x="108.75" y="0.0">Employee</node>
+    <node x="770.0" y="750.0">javax</node>
+    <node x="210.0" y="237.0">HourlyEmployee</node>
+    <node x="444.0" y="0.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="HourlyEmployee" target="Employee">
+      <point x="0.0" y="-137.5" />
+      <point x="304.5" y="212.0" />
+      <point x="245.25" y="212.0" />
+      <point x="45.5" y="93.5" />
+    </edge>
+    <edge source="ManagerEmployee" target="SalaryEmployee">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="SalaryEmployee" target="Employee">
+      <point x="0.0" y="-71.5" />
+      <point x="95.0" y="212.0" />
+      <point x="154.25" y="212.0" />
+      <point x="-45.5" y="93.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7825661233506478" x="282.14892578125" y="434.0556869506836" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
