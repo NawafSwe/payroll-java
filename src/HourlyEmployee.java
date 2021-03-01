@@ -1,8 +1,12 @@
 public class HourlyEmployee extends Employee {
+    // express number of weeks
     private int weeks;
+    // express hours per week
     private double hours;
+    // express how many per hour
     private double rate;
 
+    // initial constructor
     public HourlyEmployee(String name, double paid, double hours, int weeks, double rate) {
         super(name, paid);
         this.hours = hours;
@@ -34,7 +38,6 @@ public class HourlyEmployee extends Employee {
         this.weeks = weeks;
     }
 
-
     // customizing behavior to get the employee paid based on his hours
     @Override
     public double getPaid() {
@@ -45,6 +48,7 @@ public class HourlyEmployee extends Employee {
     public String toString() {
         return "HourlyEmployee{" +
                 "weeks=" + weeks +
+                "paid= " + this.getPaid() + "$" +
                 ", hours= " + hours +
                 ", rate= " + rate +
                 '}';
