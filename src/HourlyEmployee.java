@@ -24,9 +24,6 @@ public class HourlyEmployee extends Employee {
 
     public void setHours(double hours) {
         this.hours = hours;
-        if (hours > 40) {
-            this.setRate(this.rate * 2);
-        }
     }
 
     public void setRate(double rate) {
@@ -41,7 +38,7 @@ public class HourlyEmployee extends Employee {
     // customizing behavior to get the employee paid based on his hours
     @Override
     public double getPaid() {
-        return this.rate * this.hours * this.weeks;
+        return (this.weeks > 40 ? this.rate * 2 : this.rate) * this.hours * this.weeks;
     }
 
 
