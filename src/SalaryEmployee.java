@@ -17,4 +17,12 @@ abstract public class SalaryEmployee extends Employee {
     public double getSalary() {
         return salary;
     }
+
+    @Override
+    public String toString() {
+        return "SalaryEmployee{" +
+                "name= " + super.getName() +
+                "salary= " + salary +
+                '}';
+    }
 }

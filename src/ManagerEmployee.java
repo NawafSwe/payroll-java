@@ -18,5 +18,15 @@ public class ManagerEmployee extends SalaryEmployee {
     public double getPaid() {
         return super.getSalary() * bonus + super.getSalary();
     }
+
+    @Override
+    public String toString() {
+        return "ManagerEmployee{" +
+                "name= " + super.getName() +
+                "paid= " + this.getPaid() +
+                "salary= " + this.getSalary() +
+                "bonus= " + bonus +
+                '}';
+    }
 }
 

@@ -25,4 +25,11 @@ abstract public class Employee {
         this.paid = paid;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name= " + name + '\'' +
+                ",paid= " + paid +
+                '}';
+    }
 }

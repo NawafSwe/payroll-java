@@ -41,5 +41,12 @@ public class HourlyEmployee extends Employee {
         return (this.weeks > 40 ? this.rate * 2 : this.rate) * this.hours * this.weeks;
     }
 
-
+    @Override
+    public String toString() {
+        return "HourlyEmployee{" +
+                "weeks=" + weeks +
+                ", hours= " + hours +
+                ", rate= " + rate +
+                '}';
+    }
 }
