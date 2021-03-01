@@ -4,15 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        HourlyEmployee eh1 = new HourlyEmployee("nawaf", 40.0, 41, 20.0);
-        SalaryEmployee es1 = new ManagerEmployee("Nawaf", 2000, 2.5);
-        SalaryEmployee es2 = new ManagerEmployee("Nawaf", 2000, 2.5);
-        SalaryEmployee es3 = new ManagerEmployee("Nawaf", 2000, 2.5);
-        SalaryEmployee es4 = new ManagerEmployee("Nawaf", 2000, 2.5);
-        HourlyEmployee eh2 = new HourlyEmployee("nawaf", 40.0, 41, 20.0);
-        HourlyEmployee eh3 = new HourlyEmployee("nawaf", 40.0, 41, 20.0);
-        HourlyEmployee eh4 = new HourlyEmployee("nawaf", 40.0, 41, 20.0);
-        HourlyEmployee eh5 = new HourlyEmployee("nawaf", 40.0, 41, 20.0);
+        HourlyEmployee eh1 = new HourlyEmployee("Nawaf", 3.2, 23, 10.0);
+        SalaryEmployee es1 = new ManagerEmployee("Bader", 3000, 40);
+        SalaryEmployee es2 = new ManagerEmployee("Lamees", 5000, 1.5);
+        SalaryEmployee es3 = new ManagerEmployee("Ali", 2100, 1.3);
+        SalaryEmployee es4 = new ManagerEmployee("Hadi", 1500, 10.5);
+        HourlyEmployee eh2 = new HourlyEmployee("Jack", 21.0, 30, 10.0);
+        HourlyEmployee eh3 = new HourlyEmployee("Arwa", 30.0, 20, 430.0);
+        HourlyEmployee eh4 = new HourlyEmployee("Sameer", 50.0, 51, 12.0);
+        HourlyEmployee eh5 = new HourlyEmployee("Lena", 23.0, 60, 220.0);
         // init a list
         Employee[] list = new Employee[9];
         // appending all emps in list

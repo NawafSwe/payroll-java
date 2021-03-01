@@ -1,6 +1,8 @@
 public class ManagerEmployee extends SalaryEmployee {
+    // bonus of employee
     private double bonus;
 
+    // constructor
     public ManagerEmployee(String name, double paid, double salary, double bonus) {
         super(name, paid, salary);
         this.bonus = bonus;
@@ -22,19 +24,37 @@ public class ManagerEmployee extends SalaryEmployee {
         this.setPaid(computedPaid);
     }
 
+    /**
+     * getting bonus of emp
+     *
+     * @return bonus
+     */
     public double getBonus() {
         return bonus;
     }
 
+    /**
+     * setting bonus of emp
+     *
+     * @param bonus of emp
+     */
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
 
+    /**
+     * getting emp paid
+     *
+     * @return how much emp get paid
+     */
     @Override
     public double getPaid() {
         return (super.getSalary() * (this.getBonus() / 100)) + super.getSalary();
     }
 
+    /**
+     * @return object string
+     */
     @Override
     public String toString() {
         return "ManagerEmployee{" +
