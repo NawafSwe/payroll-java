@@ -1,18 +1,20 @@
-public class SalaryEmployee extends Employee {
+abstract public class SalaryEmployee extends Employee {
+    private double salary;
 
-    public SalaryEmployee(String name, Double paid) {
+    public SalaryEmployee(String name, Double paid, double salary) {
         super(name, paid);
+        this.salary = salary;
     }
 
     // customizing behaviors of salaryEmployee
-    @Override
-    public void setPaid(double paid) {
 
+    abstract public double getPaid();
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
-    @Override
-    public double getPaid() {
-        return 0;
+    public double getSalary() {
+        return salary;
     }
-
 }

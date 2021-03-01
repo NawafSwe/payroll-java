@@ -3,10 +3,12 @@ abstract public class Employee {
     private String name;
     private double paid;
 
+
     // constructor
     public Employee(String name, double paid) {
         this.name = name;
         this.paid = paid;
+
     }
 
     abstract public double getPaid();
@@ -19,5 +21,8 @@ abstract public class Employee {
         this.name = name;
     }
 
-   abstract public void setPaid(double paid);
+    public void setPaid(double paid) {
+        this.paid = paid;
+    }
+
 }

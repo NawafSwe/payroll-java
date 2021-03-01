@@ -1,8 +1,8 @@
 public class ManagerEmployee extends SalaryEmployee {
     private double bonus;
 
-    public ManagerEmployee(String name, double paid, double bonus) {
-        super(name, paid);
+    public ManagerEmployee(String name, double paid, double salary, double bonus) {
+        super(name, paid, salary);
         this.bonus = bonus;
     }
 
@@ -15,13 +15,8 @@ public class ManagerEmployee extends SalaryEmployee {
     }
 
     @Override
-    public void setPaid(double paid) {
-        super.setPaid(paid);
-    }
-
-    @Override
     public double getPaid() {
-        return super.getPaid();
+        return super.getSalary() * bonus + super.getSalary();
     }
 }
 
