@@ -13,7 +13,12 @@ public class HourlyEmployee extends Employee {
         this.weeks = weeks;
         this.rate = rate;
     }
-
+    public HourlyEmployee(String name, double hours, int weeks, double rate) {
+        super(name);
+        this.hours = hours;
+        this.weeks = weeks;
+        this.rate = rate;
+    }
     public double getHours() {
         return hours;
     }

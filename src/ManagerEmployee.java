@@ -6,6 +6,13 @@ public class ManagerEmployee extends SalaryEmployee {
         this.bonus = bonus;
     }
 
+    public ManagerEmployee(String name, double salary, double bonus) {
+        super(name, salary);
+        this.bonus = bonus;
+        double computedPaid = this.getPaid();
+        this.setPaid(computedPaid);
+    }
+
     public double getBonus() {
         return bonus;
     }

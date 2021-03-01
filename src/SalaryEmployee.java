@@ -6,6 +6,10 @@ abstract public class SalaryEmployee extends Employee {
         this.salary = salary;
     }
 
+    public SalaryEmployee(String name, double salary) {
+        super(name);
+        this.salary = salary;
+    }
     // customizing behaviors of salaryEmployee
 
     abstract public double getPaid();

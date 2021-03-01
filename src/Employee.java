@@ -11,6 +11,10 @@ abstract public class Employee {
 
     }
 
+    public Employee(String name) {
+        this.name = name;
+    }
+
     abstract public double getPaid();
 
     public String getName() {
